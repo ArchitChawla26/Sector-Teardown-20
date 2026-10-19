@@ -1,0 +1,38 @@
+{
+  "as_of": "2026-10-19",
+  "ticker": "GOOGL",
+  "info": {
+    "longName": "Alphabet Inc.",
+    "currentPrice": 345.615,
+    "previousClose": 340.59,
+    "marketCap": 4226848915456,
+    "enterpriseValue": 4061755604992,
+    "beta": 1.211,
+    "sharesOutstanding": 5867155790,
+    "floatShares": 10879808000,
+    "trailingEps": 19.93,
+    "forwardEps": 15.29162,
+    "trailingPE": 17.341444,
+    "forwardPE": 22.601593,
+    "priceToBook": 6.790612,
+    "enterpriseToRevenue": 9.11,
+    "enterpriseToEbitda": 23.456,
+    "totalRevenue": 445865984000,
+    "ebitda": 173164003328,
+    "totalDebt": 120790999040,
+    "bookValue": 50.896,
+    "revenueGrowth": 0.242,
+    "earningsGrowth": 2.94,
+    "sector": "Communication Services",
+    "industry": "Internet Content & Information",
+    "fiftyTwoWeekHigh": 408.61,
+    "fiftyTwoWeekLow": 244.15,
+    "currency": "USD"
+  },
+  "price_asof": "2026-10-16",
+  "price_check": {
+    "oct16_close": 340.5899963378906,
+    "last_close": 345.6300048828125,
+    "last_close_date": "2026-10-19"
+  }
+}

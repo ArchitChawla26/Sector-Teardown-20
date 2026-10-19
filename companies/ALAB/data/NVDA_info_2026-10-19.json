@@ -1,0 +1,32 @@
+{
+  "as_of": "2026-10-19",
+  "ticker": "NVDA",
+  "info": {
+    "longName": "NVIDIA Corporation",
+    "currentPrice": 218.87,
+    "previousClose": 214.13,
+    "marketCap": 5285053726720,
+    "enterpriseValue": 5136924016640,
+    "beta": 2.216,
+    "sharesOutstanding": 24147000000,
+    "floatShares": 23133108000,
+    "trailingEps": 7.91,
+    "forwardEps": 15.9146,
+    "trailingPE": 27.670038,
+    "forwardPE": 13.75278,
+    "priceToBook": 23.08025,
+    "enterpriseToRevenue": 16.955,
+    "enterpriseToEbitda": 25.523,
+    "totalRevenue": 302970011648,
+    "ebitda": 201266003968,
+    "totalDebt": 38860001280,
+    "bookValue": 9.483,
+    "revenueGrowth": 1.059,
+    "earningsGrowth": 1.278,
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "fiftyTwoWeekHigh": 243.37,
+    "fiftyTwoWeekLow": 164.27,
+    "currency": "USD"
+  }
+}

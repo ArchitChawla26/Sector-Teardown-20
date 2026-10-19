@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-Augmented Sector Teardown — 20-Company Outlook | Archit Chawla</title>
+<meta name="description" content="Independent equity research: DCF valuations across 20 companies in 5 sectors, with a ranked sector outlook. By Archit Chawla.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="eyebrow">Independent Equity Research</div>
+    <h1>AI-Augmented Sector Teardown</h1>
+    <p class="sub">DCF valuations on 20 companies across 5 sectors, ranked by implied upside. One framework, applied identically — so the comparison is honest.</p>
+    <div class="byline">
+      <span>By <strong>Archit Chawla</strong></span>
+      <span class="dot">·</span>
+      <span>Model as of <strong id="meta-model-asof">—</strong></span>
+      <span class="dot">·</span>
+      <span>Prices as of <strong id="meta-price-asof">—</strong></span>
+    </div>
+    <div class="live-strip" id="live-strip">
+      <span class="live-dot" id="live-dot"></span>
+      <span id="live-label">Loading live quotes…</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="stats" id="stats"></section>
+
+  <section>
+    <h2>Sector leaderboard</h2>
+    <p class="section-note">Ranked by median base-case implied upside across the four companies in each sector.</p>
+    <div id="leaderboard" class="leaderboard"></div>
+  </section>
+
+  <section>
+    <h2>Company valuations</h2>
+    <p class="section-note">Upside recomputes against the live quote when available; DCF fair values are fixed at the model date. Every figure is dated.</p>
+    <div class="filters" id="filters"></div>
+    <div class="table-scroll">
+      <table class="companies" id="company-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Sector</th>
+            <th class="num">Price</th>
+            <th class="num">DCF base</th>
+            <th class="num">Implied upside</th>
+            <th>Bull / bear range</th>
+            <th>Call</th>
+          </tr>
+        </thead>
+        <tbody id="company-rows"></tbody>
+      </table>
+    </div>
+    <p class="footnote">Price column shows the live quote (~15 min delayed) when the feed responds, otherwise the last stored close. DCF values are per-share, as of the model date shown.</p>
+  </section>
+
+  <section>
+    <h2>Methodology &amp; verification</h2>
+    <div class="method">
+      <p>I value every company with the same framework so the ranking means something. Each name gets a 5-year explicit DCF (FY2026–2030, with 3-year granular detail), a bull and a bear case, and a comps cross-check against its sector peers. WACC comes from CAPM: 5.1% US 10-year risk-free, 4.5% equity risk premium, per-company beta cross-checked across multiple sources. Terminal growth is 3.0% in the base case. Banks are the one adaptation — you can't run an enterprise DCF on a bank, so I discount distributable cash flow (dividends + buybacks) at the cost of equity instead. That's the standard approach, and it's documented in each model.</p>
+      <p>The "AI-augmented" part is the workflow: I use LLM tooling to accelerate data extraction and drafting, then verify every figure against primary sources myself. The verification notes in each memo log what I caught — bad share counts, blank history columns, distorted tax rates. If a number couldn't be verified, it's marked N/A with the workaround stated. Nothing is invented.</p>
+      <p>Recommendations follow the math: BUY needs 20%+ base-case upside with a margin of safety, HOLD is −10% to +20%, PASS is anything worse. The sector report ranks sectors by median implied upside — the conclusion is whatever the numbers say.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Independent project for skill demonstration; not investment advice.</p>
+    <p>© 2026 Archit Chawla · Data: Yahoo Finance via scheduled refresh · Live quotes: Stooq (~15 min delayed)</p>
+  </footer>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

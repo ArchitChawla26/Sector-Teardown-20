@@ -1,0 +1,38 @@
+{
+  "as_of": "2026-10-19",
+  "ticker": "AAPL",
+  "info": {
+    "longName": "Apple Inc.",
+    "currentPrice": 343.1,
+    "previousClose": 343.46,
+    "marketCap": 5007263399936,
+    "enterpriseValue": 5034461888512,
+    "beta": 1.069,
+    "sharesOutstanding": 14594180000,
+    "floatShares": 14569078010,
+    "trailingEps": 8.72,
+    "forwardEps": 9.57785,
+    "trailingPE": 39.34633,
+    "forwardPE": 35.822235,
+    "priceToBook": 46.616848,
+    "enterpriseToRevenue": 10.785,
+    "enterpriseToEbitda": 29.974,
+    "totalRevenue": 466822987776,
+    "ebitda": 167959003136,
+    "totalDebt": 84343996416,
+    "bookValue": 7.36,
+    "revenueGrowth": 0.164,
+    "earningsGrowth": 0.287,
+    "sector": "Technology",
+    "industry": "Consumer Electronics",
+    "fiftyTwoWeekHigh": 348.15,
+    "fiftyTwoWeekLow": 243.42,
+    "currency": "USD"
+  },
+  "price_asof": "2026-10-16",
+  "price_check": {
+    "oct16_close": 343.4599914550781,
+    "last_close": 343.0899963378906,
+    "last_close_date": "2026-10-19"
+  }
+}

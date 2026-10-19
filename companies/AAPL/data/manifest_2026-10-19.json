@@ -1,0 +1,14 @@
+{
+  "as_of": "2026-10-19",
+  "price_asof": "2026-10-16",
+  "ticker": "AAPL",
+  "data": {
+    "income_annual": "/home/hatch/workspace/sector-teardown-20/companies/AAPL/data/AAPL_income_annual_2026-10-19.csv",
+    "balance_annual": "/home/hatch/workspace/sector-teardown-20/companies/AAPL/data/AAPL_balance_annual_2026-10-19.csv",
+    "cashflow_annual": "/home/hatch/workspace/sector-teardown-20/companies/AAPL/data/AAPL_cashflow_annual_2026-10-19.csv",
+    "income_quarterly": "/home/hatch/workspace/sector-teardown-20/companies/AAPL/data/AAPL_income_quarterly_2026-10-19.csv",
+    "balance_quarterly": "/home/hatch/workspace/sector-teardown-20/companies/AAPL/data/AAPL_balance_quarterly_2026-10-19.csv",
+    "history_1mo": "/home/hatch/workspace/sector-teardown-20/companies/AAPL/data/AAPL_history_1mo_2026-10-19.csv",
+    "info": "/home/hatch/workspace/sector-teardown-20/companies/AAPL/data/AAPL_info_2026-10-19.json"
+  }
+}

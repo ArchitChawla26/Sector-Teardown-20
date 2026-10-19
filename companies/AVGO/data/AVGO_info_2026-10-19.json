@@ -1,0 +1,32 @@
+{
+  "as_of": "2026-10-19",
+  "ticker": "AVGO",
+  "info": {
+    "longName": "Broadcom Inc.",
+    "currentPrice": 339.38,
+    "previousClose": 328.75,
+    "marketCap": 1620074561536,
+    "enterpriseValue": 1604774789120,
+    "beta": 1.476,
+    "sharesOutstanding": 4773629865,
+    "floatShares": 4715677998,
+    "trailingEps": 7.83,
+    "forwardEps": 19.39695,
+    "trailingPE": 43.34355,
+    "forwardPE": 17.496565,
+    "priceToBook": 16.252275,
+    "enterpriseToRevenue": 18.01,
+    "enterpriseToEbitda": 30.708,
+    "totalRevenue": 89103998976,
+    "ebitda": 52259999744,
+    "totalDebt": 59419000832,
+    "bookValue": 20.882,
+    "revenueGrowth": 0.855,
+    "earningsGrowth": 2.153,
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "fiftyTwoWeekHigh": 495.0,
+    "fiftyTwoWeekLow": 289.96,
+    "currency": "USD"
+  }
+}

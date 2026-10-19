@@ -1,0 +1,32 @@
+{
+  "as_of": "2026-10-19",
+  "ticker": "CRM",
+  "info": {
+    "longName": "Salesforce, Inc.",
+    "currentPrice": 240.19,
+    "previousClose": 240.7,
+    "marketCap": 197676367872,
+    "enterpriseValue": 229069094912,
+    "beta": 1.256,
+    "sharesOutstanding": 823000000,
+    "floatShares": 797536380,
+    "trailingEps": 10.93,
+    "forwardEps": 16.02297,
+    "trailingPE": 21.975296,
+    "forwardPE": 14.990355,
+    "priceToBook": 5.150755,
+    "enterpriseToRevenue": 5.213,
+    "enterpriseToEbitda": 17.759,
+    "totalRevenue": 43938000896,
+    "ebitda": 12899000320,
+    "totalDebt": 42375999488,
+    "bookValue": 46.632,
+    "revenueGrowth": 0.108,
+    "earningsGrowth": 1.189,
+    "sector": "Technology",
+    "industry": "Software - Application",
+    "fiftyTwoWeekHigh": 269.11,
+    "fiftyTwoWeekLow": 146.32,
+    "currency": "USD"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "ticker": "PLTR",
+  "name": "Palantir Technologies Inc.",
+  "sector": "Enterprise SaaS",
+  "price": 186.03,
+  "price_asof": "2026-10-16",
+  "dcf_base": 31.79,
+  "dcf_bull": 50.69,
+  "dcf_bear": 14.98,
+  "model_asof": "2026-10-19",
+  "upside_pct": -82.9,
+  "recommendation": "PASS"
+}

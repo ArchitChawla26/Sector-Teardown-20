@@ -1,0 +1,34 @@
+name: Daily price refresh
+
+# Weekdays at 21:30 UTC (17:30 ET) — after the US market close.
+on:
+  schedule:
+    - cron: "30 21 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install yfinance
+
+      - name: Refresh prices
+        run: python refresh_pipeline.py
+
+      - name: Commit updated prices
+        run: |
+          git config user.name "price-refresh-bot"
+          git config user.email "price-refresh-bot@users.noreply.github.com"
+          git add site/data/companies.json
+          git diff --cached --quiet || git commit -m "Daily price refresh $(date -u +%F)"
+          git push

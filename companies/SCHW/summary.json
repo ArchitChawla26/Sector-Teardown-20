@@ -1,0 +1,13 @@
+{
+  "ticker": "SCHW",
+  "name": "The Charles Schwab Corporation",
+  "sector": "Fintech",
+  "price": 91.96,
+  "price_asof": "2026-10-16",
+  "dcf_base": 161.09,
+  "dcf_bull": 269.82,
+  "dcf_bear": 77.41,
+  "model_asof": "2026-10-19",
+  "upside_pct": 75.2,
+  "recommendation": "BUY"
+}

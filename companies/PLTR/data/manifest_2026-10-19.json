@@ -1,0 +1,33 @@
+{
+  "as_of": "2026-10-19",
+  "ticker": "PLTR",
+  "peers": [
+    "CRM",
+    "NOW",
+    "SNOW"
+  ],
+  "files": [
+    "CRM_balance_annual_2026-10-19.csv",
+    "CRM_cashflow_annual_2026-10-19.csv",
+    "CRM_income_annual_2026-10-19.csv",
+    "CRM_income_quarterly_2026-10-19.csv",
+    "CRM_info_2026-10-19.json",
+    "NOW_balance_annual_2026-10-19.csv",
+    "NOW_cashflow_annual_2026-10-19.csv",
+    "NOW_income_annual_2026-10-19.csv",
+    "NOW_income_quarterly_2026-10-19.csv",
+    "NOW_info_2026-10-19.json",
+    "PLTR_balance_annual_2026-10-19.csv",
+    "PLTR_balance_quarterly_2026-10-19.csv",
+    "PLTR_cashflow_annual_2026-10-19.csv",
+    "PLTR_income_annual_2026-10-19.csv",
+    "PLTR_income_quarterly_2026-10-19.csv",
+    "PLTR_info_2026-10-19.json",
+    "SNOW_balance_annual_2026-10-19.csv",
+    "SNOW_cashflow_annual_2026-10-19.csv",
+    "SNOW_income_annual_2026-10-19.csv",
+    "SNOW_income_quarterly_2026-10-19.csv",
+    "SNOW_info_2026-10-19.json",
+    "manifest_2026-10-19.json"
+  ]
+}

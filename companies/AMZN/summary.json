@@ -1,0 +1,13 @@
+{
+  "ticker": "AMZN",
+  "name": "Amazon.com, Inc.",
+  "sector": "Consumer Tech",
+  "price": 250.0,
+  "price_asof": "2026-10-16",
+  "dcf_base": 79.68,
+  "dcf_bull": 128.28,
+  "dcf_bear": 19.05,
+  "model_asof": "2026-10-19",
+  "upside_pct": -68.1,
+  "recommendation": "PASS"
+}

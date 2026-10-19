@@ -1,0 +1,13 @@
+{
+  "ticker": "SOFI",
+  "name": "SoFi Technologies, Inc.",
+  "sector": "Fintech",
+  "price": 14.55,
+  "price_asof": "2026-10-16",
+  "dcf_base": 11.62,
+  "dcf_bull": 17.34,
+  "dcf_bear": 5.06,
+  "model_asof": "2026-10-19",
+  "upside_pct": -20.1,
+  "recommendation": "PASS"
+}

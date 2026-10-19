@@ -1,0 +1,32 @@
+{
+  "as_of": "2026-10-19",
+  "ticker": "HOOD",
+  "info": {
+    "longName": "Robinhood Markets, Inc.",
+    "currentPrice": 99.655,
+    "previousClose": 98.87,
+    "marketCap": 89598042112,
+    "enterpriseValue": 87973265408,
+    "beta": 2.354,
+    "sharesOutstanding": 790630234,
+    "floatShares": 784359375,
+    "trailingEps": 2.27,
+    "forwardEps": 3.42758,
+    "trailingPE": 43.900883,
+    "forwardPE": 29.074448,
+    "priceToBook": 9.45045,
+    "enterpriseToRevenue": 17.837,
+    "enterpriseToEbitda": null,
+    "totalRevenue": 4931999744,
+    "ebitda": null,
+    "totalDebt": 22925000704,
+    "bookValue": 10.545,
+    "revenueGrowth": 0.323,
+    "earningsGrowth": 0.476,
+    "sector": "Financial Services",
+    "industry": "Capital Markets",
+    "fiftyTwoWeekHigh": 150.47,
+    "fiftyTwoWeekLow": 63.515,
+    "currency": "USD"
+  }
+}

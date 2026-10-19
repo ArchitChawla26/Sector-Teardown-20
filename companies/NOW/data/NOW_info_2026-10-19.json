@@ -1,0 +1,32 @@
+{
+  "as_of": "2026-10-19",
+  "ticker": "NOW",
+  "info": {
+    "longName": "ServiceNow, Inc.",
+    "currentPrice": 144.4,
+    "previousClose": 141.97,
+    "marketCap": 149289664512,
+    "enterpriseValue": 150566387712,
+    "beta": 0.99,
+    "sharesOutstanding": 1033862000,
+    "floatShares": 1031298022,
+    "trailingEps": 1.6,
+    "forwardEps": 5.00529,
+    "trailingPE": 90.24999,
+    "forwardPE": 28.849476,
+    "priceToBook": 11.927969,
+    "enterpriseToRevenue": 10.22,
+    "enterpriseToEbitda": 51.973,
+    "totalRevenue": 14732000256,
+    "ebitda": 2896999936,
+    "totalDebt": 8453000192,
+    "bookValue": 12.106,
+    "revenueGrowth": 0.24,
+    "earningsGrowth": -0.219,
+    "sector": "Technology",
+    "industry": "Software - Application",
+    "fiftyTwoWeekHigh": 192.966,
+    "fiftyTwoWeekLow": 81.24,
+    "currency": "USD"
+  }
+}

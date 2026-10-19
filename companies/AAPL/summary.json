@@ -1,0 +1,13 @@
+{
+  "ticker": "AAPL",
+  "name": "Apple Inc.",
+  "sector": "Consumer Tech",
+  "price": 343.46,
+  "price_asof": "2026-10-16",
+  "dcf_base": 146.75,
+  "dcf_bull": 217.8,
+  "dcf_bear": 81.97,
+  "model_asof": "2026-10-19",
+  "upside_pct": -57.3,
+  "recommendation": "PASS"
+}

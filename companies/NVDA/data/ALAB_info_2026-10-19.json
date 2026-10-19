@@ -1,0 +1,32 @@
+{
+  "as_of": "2026-10-19",
+  "ticker": "ALAB",
+  "info": {
+    "longName": "Astera Labs, Inc.",
+    "currentPrice": 292.5107,
+    "previousClose": 285.82,
+    "marketCap": 50746249216,
+    "enterpriseValue": 48376967168,
+    "beta": 3.69,
+    "sharesOutstanding": 173485104,
+    "floatShares": 155996071,
+    "trailingEps": 2.03,
+    "forwardEps": 6.40305,
+    "trailingPE": 144.09395,
+    "forwardPE": 45.68303,
+    "priceToBook": 29.406929,
+    "enterpriseToRevenue": 40.25,
+    "enterpriseToEbitda": 169.508,
+    "totalRevenue": 1201918976,
+    "ebitda": 285396000,
+    "totalDebt": 44413000,
+    "bookValue": 9.947,
+    "revenueGrowth": 1.045,
+    "earningsGrowth": 1.862,
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "fiftyTwoWeekHigh": 499.476,
+    "fiftyTwoWeekLow": 97.89,
+    "currency": "USD"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "as_of": "2026-10-19",
+  "ticker": "SNOW",
+  "info": {
+    "longName": "Snowflake Inc.",
+    "currentPrice": 316.9,
+    "previousClose": 306.84,
+    "marketCap": 111802318848,
+    "enterpriseValue": 108555362304,
+    "beta": 1.351,
+    "sharesOutstanding": 352800000,
+    "floatShares": 343259630,
+    "trailingEps": -3.18,
+    "forwardEps": 3.00785,
+    "trailingPE": null,
+    "forwardPE": 105.35765,
+    "priceToBook": 51.959335,
+    "enterpriseToRevenue": 19.975,
+    "enterpriseToEbitda": -104.754,
+    "totalRevenue": 5434647040,
+    "ebitda": -1036284992,
+    "totalDebt": 2763814912,
+    "bookValue": 6.099,
+    "revenueGrowth": 0.351,
+    "earningsGrowth": null,
+    "sector": "Technology",
+    "industry": "Software - Application",
+    "fiftyTwoWeekHigh": 384.56,
+    "fiftyTwoWeekLow": 118.3,
+    "currency": "USD"
+  }
+}

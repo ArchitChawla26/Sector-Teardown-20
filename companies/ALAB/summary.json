@@ -1,0 +1,13 @@
+{
+  "ticker": "ALAB",
+  "name": "Astera Labs, Inc.",
+  "sector": "AI Infra & Semis",
+  "price": 285.82,
+  "price_asof": "2026-10-16",
+  "dcf_base": 35.27,
+  "dcf_bull": 57.96,
+  "dcf_bear": 9.32,
+  "model_asof": "2026-10-19",
+  "upside_pct": -87.7,
+  "recommendation": "PASS"
+}

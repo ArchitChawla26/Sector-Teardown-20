@@ -1,0 +1,13 @@
+{
+  "ticker": "SNOW",
+  "name": "Snowflake Inc.",
+  "sector": "Enterprise SaaS",
+  "price": 306.84,
+  "price_asof": "2026-10-16",
+  "dcf_base": 137.47,
+  "dcf_bull": 226.06,
+  "dcf_bear": 62.85,
+  "model_asof": "2026-10-19",
+  "upside_pct": -55.2,
+  "recommendation": "PASS"
+}

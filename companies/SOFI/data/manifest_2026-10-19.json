@@ -1,0 +1,22 @@
+{
+  "as_of": "2026-10-19",
+  "tickers": {
+    "SOFI": {
+      "income_annual": "/home/hatch/workspace/sector-teardown-20/companies/SOFI/data/SOFI_income_annual_2026-10-19.csv",
+      "balance_annual": "/home/hatch/workspace/sector-teardown-20/companies/SOFI/data/SOFI_balance_annual_2026-10-19.csv",
+      "cashflow_annual": "/home/hatch/workspace/sector-teardown-20/companies/SOFI/data/SOFI_cashflow_annual_2026-10-19.csv",
+      "income_quarterly": "/home/hatch/workspace/sector-teardown-20/companies/SOFI/data/SOFI_income_quarterly_2026-10-19.csv",
+      "info": "/home/hatch/workspace/sector-teardown-20/companies/SOFI/data/SOFI_info_2026-10-19.json"
+    },
+    "HOOD": {
+      "info": "/home/hatch/workspace/sector-teardown-20/companies/SOFI/data/HOOD_info_2026-10-19.json"
+    },
+    "COIN": {
+      "info": "/home/hatch/workspace/sector-teardown-20/companies/SOFI/data/COIN_info_2026-10-19.json"
+    },
+    "SCHW": {
+      "info": "/home/hatch/workspace/sector-teardown-20/companies/SOFI/data/SCHW_info_2026-10-19.json"
+    },
+    "prices_oct16close": "/home/hatch/workspace/sector-teardown-20/companies/SOFI/data/prices_oct16close_2026-10-19.json"
+  }
+}

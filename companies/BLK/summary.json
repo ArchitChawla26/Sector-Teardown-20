@@ -1,0 +1,13 @@
+{
+  "ticker": "BLK",
+  "name": "BlackRock, Inc.",
+  "sector": "Diversified Financials",
+  "price": 1134.38,
+  "price_asof": "2026-10-16",
+  "dcf_base": 575.01,
+  "dcf_bull": 896.74,
+  "dcf_bear": 337.01,
+  "model_asof": "2026-10-19",
+  "upside_pct": -49.3,
+  "recommendation": "PASS"
+}

@@ -1,0 +1,38 @@
+{
+  "as_of": "2026-10-19",
+  "ticker": "AMZN",
+  "info": {
+    "longName": "Amazon.com, Inc.",
+    "currentPrice": 262.1605,
+    "previousClose": 250.0,
+    "marketCap": 2827745230848,
+    "enterpriseValue": 2825225502720,
+    "beta": 1.456,
+    "sharesOutstanding": 10786313572,
+    "floatShares": 9810799373,
+    "trailingEps": 12.43,
+    "forwardEps": 10.44315,
+    "trailingPE": 21.090948,
+    "forwardPE": 25.103584,
+    "priceToBook": 5.1247263,
+    "enterpriseToRevenue": 3.642,
+    "enterpriseToEbitda": 16.726,
+    "totalRevenue": 775680032768,
+    "ebitda": 168911994880,
+    "totalDebt": 251635007488,
+    "bookValue": 51.156,
+    "revenueGrowth": 0.196,
+    "earningsGrowth": 2.423,
+    "sector": "Consumer Cyclical",
+    "industry": "Internet Retail",
+    "fiftyTwoWeekHigh": 287.2,
+    "fiftyTwoWeekLow": 196.0,
+    "currency": "USD"
+  },
+  "price_asof": "2026-10-16",
+  "price_check": {
+    "oct16_close": 250.0,
+    "last_close": 262.1650085449219,
+    "last_close_date": "2026-10-19"
+  }
+}

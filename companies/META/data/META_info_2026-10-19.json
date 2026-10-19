@@ -1,0 +1,38 @@
+{
+  "as_of": "2026-10-19",
+  "ticker": "META",
+  "info": {
+    "longName": "Meta Platforms, Inc.",
+    "currentPrice": 704.59,
+    "previousClose": 709.325,
+    "marketCap": 1794947416064,
+    "enterpriseValue": 1829067816960,
+    "beta": 1.185,
+    "sharesOutstanding": 2205128509,
+    "floatShares": 2201809630,
+    "trailingEps": 26.54,
+    "forwardEps": 34.62667,
+    "trailingPE": 26.54823,
+    "forwardPE": 20.348188,
+    "priceToBook": 6.8727083,
+    "enterpriseToRevenue": 8.014,
+    "enterpriseToEbitda": 16.68,
+    "totalRevenue": 228246994944,
+    "ebitda": 109654999040,
+    "totalDebt": 112317997056,
+    "bookValue": 102.52,
+    "revenueGrowth": 0.28,
+    "earningsGrowth": -0.134,
+    "sector": "Communication Services",
+    "industry": "Internet Content & Information",
+    "fiftyTwoWeekHigh": 779.82,
+    "fiftyTwoWeekLow": 520.26,
+    "currency": "USD"
+  },
+  "price_asof": "2026-10-16",
+  "price_check": {
+    "oct16_close": 709.3300170898438,
+    "last_close": 704.5399780273438,
+    "last_close_date": "2026-10-19"
+  }
+}

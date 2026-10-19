@@ -1,0 +1,32 @@
+{
+  "as_of": "2026-10-19",
+  "ticker": "COIN",
+  "info": {
+    "longName": "Coinbase Global, Inc.",
+    "currentPrice": 173.07,
+    "previousClose": 173.16,
+    "marketCap": 45654339584,
+    "enterpriseValue": 43565449216,
+    "beta": 3.409,
+    "sharesOutstanding": 222803032,
+    "floatShares": 219807817,
+    "trailingEps": -3.84,
+    "forwardEps": 2.98685,
+    "trailingPE": null,
+    "forwardPE": 57.93394,
+    "priceToBook": 3.489765,
+    "enterpriseToRevenue": 7.208,
+    "enterpriseToEbitda": 62.276,
+    "totalRevenue": 6043752960,
+    "ebitda": 699548992,
+    "totalDebt": 6668290048,
+    "bookValue": 49.585,
+    "revenueGrowth": -0.173,
+    "earningsGrowth": null,
+    "sector": "Financial Services",
+    "industry": "Financial Data & Stock Exchanges",
+    "fiftyTwoWeekHigh": 373.25,
+    "fiftyTwoWeekLow": 139.11,
+    "currency": "USD"
+  }
+}

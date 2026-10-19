@@ -1,0 +1,22 @@
+{
+  "as_of": "2026-10-19",
+  "tickers": {
+    "SCHW": {
+      "income_annual": "/home/hatch/workspace/sector-teardown-20/companies/SCHW/data/SCHW_income_annual_2026-10-19.csv",
+      "balance_annual": "/home/hatch/workspace/sector-teardown-20/companies/SCHW/data/SCHW_balance_annual_2026-10-19.csv",
+      "cashflow_annual": "/home/hatch/workspace/sector-teardown-20/companies/SCHW/data/SCHW_cashflow_annual_2026-10-19.csv",
+      "income_quarterly": "/home/hatch/workspace/sector-teardown-20/companies/SCHW/data/SCHW_income_quarterly_2026-10-19.csv",
+      "info": "/home/hatch/workspace/sector-teardown-20/companies/SCHW/data/SCHW_info_2026-10-19.json"
+    },
+    "HOOD": {
+      "info": "/home/hatch/workspace/sector-teardown-20/companies/SCHW/data/HOOD_info_2026-10-19.json"
+    },
+    "COIN": {
+      "info": "/home/hatch/workspace/sector-teardown-20/companies/SCHW/data/COIN_info_2026-10-19.json"
+    },
+    "SOFI": {
+      "info": "/home/hatch/workspace/sector-teardown-20/companies/SCHW/data/SOFI_info_2026-10-19.json"
+    },
+    "prices_oct16close": "/home/hatch/workspace/sector-teardown-20/companies/SCHW/data/prices_oct16close_2026-10-19.json"
+  }
+}

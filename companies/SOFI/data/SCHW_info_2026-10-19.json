@@ -1,0 +1,32 @@
+{
+  "as_of": "2026-10-19",
+  "ticker": "SCHW",
+  "info": {
+    "longName": "The Charles Schwab Corporation",
+    "currentPrice": 90.4,
+    "previousClose": 91.96,
+    "marketCap": 156331950080,
+    "enterpriseValue": 130406883328,
+    "beta": 0.782,
+    "sharesOutstanding": 1729335714,
+    "floatShares": 1624544640,
+    "trailingEps": 5.85,
+    "forwardEps": 7.85398,
+    "trailingPE": 15.452992,
+    "forwardPE": 11.510088,
+    "priceToBook": 3.0391662,
+    "enterpriseToRevenue": 4.819,
+    "enterpriseToEbitda": null,
+    "totalRevenue": 27061000192,
+    "ebitda": null,
+    "totalDebt": 40000000000,
+    "bookValue": 29.745,
+    "revenueGrowth": 0.169,
+    "earningsGrowth": 0.286,
+    "sector": "Financial Services",
+    "industry": "Capital Markets",
+    "fiftyTwoWeekHigh": 114.53,
+    "fiftyTwoWeekLow": 83.96,
+    "currency": "USD"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "ticker": "JPM",
+  "name": "JPMorgan Chase & Co.",
+  "sector": "Diversified Financials",
+  "price": 339.72,
+  "price_asof": "2026-10-16",
+  "dcf_base": 313.42,
+  "dcf_bull": 500.78,
+  "dcf_bear": 156.06,
+  "model_asof": "2026-10-19",
+  "upside_pct": -7.7,
+  "recommendation": "HOLD"
+}

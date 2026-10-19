@@ -1,0 +1,35 @@
+{
+  "as_of": "2026-10-19",
+  "ticker": "MS",
+  "peers": [
+    "JPM",
+    "GS",
+    "BLK"
+  ],
+  "files": [
+    "BLK_balance_annual_2026-10-19.csv",
+    "BLK_cashflow_annual_2026-10-19.csv",
+    "BLK_history_2026-10-19.csv",
+    "BLK_income_annual_2026-10-19.csv",
+    "BLK_income_quarterly_2026-10-19.csv",
+    "BLK_info_2026-10-19.json",
+    "GS_balance_annual_2026-10-19.csv",
+    "GS_cashflow_annual_2026-10-19.csv",
+    "GS_history_2026-10-19.csv",
+    "GS_income_annual_2026-10-19.csv",
+    "GS_income_quarterly_2026-10-19.csv",
+    "GS_info_2026-10-19.json",
+    "JPM_balance_annual_2026-10-19.csv",
+    "JPM_cashflow_annual_2026-10-19.csv",
+    "JPM_history_2026-10-19.csv",
+    "JPM_income_annual_2026-10-19.csv",
+    "JPM_income_quarterly_2026-10-19.csv",
+    "JPM_info_2026-10-19.json",
+    "MS_balance_annual_2026-10-19.csv",
+    "MS_cashflow_annual_2026-10-19.csv",
+    "MS_history_2026-10-19.csv",
+    "MS_income_annual_2026-10-19.csv",
+    "MS_income_quarterly_2026-10-19.csv",
+    "MS_info_2026-10-19.json"
+  ]
+}

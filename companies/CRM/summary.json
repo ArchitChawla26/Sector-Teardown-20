@@ -1,0 +1,13 @@
+{
+  "ticker": "CRM",
+  "name": "Salesforce, Inc.",
+  "sector": "Enterprise SaaS",
+  "price": 240.7,
+  "price_asof": "2026-10-16",
+  "dcf_base": 223.72,
+  "dcf_bull": 338.58,
+  "dcf_bear": 129.66,
+  "model_asof": "2026-10-19",
+  "upside_pct": -7.1,
+  "recommendation": "HOLD"
+}

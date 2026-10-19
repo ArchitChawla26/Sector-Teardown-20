@@ -1,0 +1,22 @@
+{
+  "as_of": "2026-10-19",
+  "tickers": {
+    "COIN": {
+      "income_annual": "/home/hatch/workspace/sector-teardown-20/companies/COIN/data/COIN_income_annual_2026-10-19.csv",
+      "balance_annual": "/home/hatch/workspace/sector-teardown-20/companies/COIN/data/COIN_balance_annual_2026-10-19.csv",
+      "cashflow_annual": "/home/hatch/workspace/sector-teardown-20/companies/COIN/data/COIN_cashflow_annual_2026-10-19.csv",
+      "income_quarterly": "/home/hatch/workspace/sector-teardown-20/companies/COIN/data/COIN_income_quarterly_2026-10-19.csv",
+      "info": "/home/hatch/workspace/sector-teardown-20/companies/COIN/data/COIN_info_2026-10-19.json"
+    },
+    "HOOD": {
+      "info": "/home/hatch/workspace/sector-teardown-20/companies/COIN/data/HOOD_info_2026-10-19.json"
+    },
+    "SOFI": {
+      "info": "/home/hatch/workspace/sector-teardown-20/companies/COIN/data/SOFI_info_2026-10-19.json"
+    },
+    "SCHW": {
+      "info": "/home/hatch/workspace/sector-teardown-20/companies/COIN/data/SCHW_info_2026-10-19.json"
+    },
+    "prices_oct16close": "/home/hatch/workspace/sector-teardown-20/companies/COIN/data/prices_oct16close_2026-10-19.json"
+  }
+}

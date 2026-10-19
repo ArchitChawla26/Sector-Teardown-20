@@ -1,0 +1,13 @@
+{
+  "ticker": "GS",
+  "name": "The Goldman Sachs Group, Inc.",
+  "sector": "Diversified Financials",
+  "price": 881.26,
+  "price_asof": "2026-10-16",
+  "dcf_base": 775.17,
+  "dcf_bull": 1196.8,
+  "dcf_bear": 280.37,
+  "model_asof": "2026-10-19",
+  "upside_pct": -12.0,
+  "recommendation": "PASS"
+}

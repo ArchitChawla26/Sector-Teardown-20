@@ -1,0 +1,13 @@
+{
+  "ticker": "MS",
+  "name": "Morgan Stanley",
+  "sector": "Diversified Financials",
+  "price": 180.57,
+  "price_asof": "2026-10-16",
+  "dcf_base": 136.93,
+  "dcf_bull": 204.19,
+  "dcf_bear": 58.21,
+  "model_asof": "2026-10-19",
+  "upside_pct": -24.2,
+  "recommendation": "PASS"
+}
