@@ -21,10 +21,6 @@
       <span class="dot">·</span>
       <span>Prices as of <strong id="meta-price-asof">—</strong></span>
     </div>
-    <div class="live-strip" id="live-strip">
-      <span class="live-dot" id="live-dot"></span>
-      <span id="live-label">Loading live quotes…</span>
-    </div>
   </div>
 </header>
 
@@ -40,7 +36,7 @@
 
   <section>
     <h2>Company valuations</h2>
-    <p class="section-note">Upside recomputes against the live quote when available; DCF fair values are fixed at the model date. Every figure is dated.</p>
+    <p class="section-note">DCF fair values are fixed at the model date; prices refresh daily on a schedule. Every figure is dated.</p>
     <div class="filters" id="filters"></div>
     <div class="table-scroll">
       <table class="companies" id="company-table">
@@ -58,7 +54,7 @@
         <tbody id="company-rows"></tbody>
       </table>
     </div>
-    <p class="footnote">Price column shows the live quote (~15 min delayed) when the feed responds, otherwise the last stored close. DCF values are per-share, as of the model date shown.</p>
+    <p class="footnote">Prices are the latest stored closes from the daily scheduled refresh. DCF values are per-share, as of the model date shown.</p>
   </section>
 
   <section>
@@ -72,7 +68,7 @@
 
   <footer>
     <p>Independent project for skill demonstration; not investment advice.</p>
-    <p>© 2026 Archit Chawla · Data: Yahoo Finance via scheduled refresh · Live quotes: Stooq (~15 min delayed)</p>
+    <p>© 2026 Archit Chawla · Data: Yahoo Finance via scheduled refresh</p>
   </footer>
 
 </main>
