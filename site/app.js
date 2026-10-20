@@ -1,9 +1,6 @@
 /* AI-Augmented Sector Teardown — dashboard logic.
-   Loads the pipeline-generated companies.json, renders the leaderboard and
-   company table, then layers live quotes from Stooq (~15 min delayed) on top,
-   recomputing implied upside in the browser. Falls back to stored prices. */
-
-const STOOQ_URL = "https://stooq.com/q/l/?s={syms}&f=sd2t2ohlcv&h&e=csv";
+   Loads the pipeline-generated companies.json and renders the leaderboard
+   and company table from the stored prices, refreshed daily on a schedule. */
 
 let COMPANIES = [];
 let META = {};
@@ -26,9 +23,9 @@ async function init() {
     if (!res.ok) throw new Error("companies.json not found");
     const data = await res.json();
     META = data.meta || {};
-    COMPANIES = (data.companies || []).map((c) => ({ ...c, livePrice: null }));
+    COMPANIES = data.companies || [];
   } catch (e) {
-    document.getElementById("live-label").textContent = "Data not yet published — check back soon.";
+    console.error("companies.json failed to load", e);
     return;
   }
   renderMeta();
@@ -36,7 +33,6 @@ async function init() {
   renderFilters();
   renderLeaderboard();
   renderTable();
-  loadLiveQuotes();
 }
 
 function renderMeta() {
@@ -111,7 +107,7 @@ function renderFilters() {
 }
 
 function effectivePrice(c) {
-  return c.livePrice != null ? c.livePrice : c.price;
+  return c.price;
 }
 function effectiveUpside(c) {
   const p = effectivePrice(c);
@@ -130,7 +126,6 @@ function renderTable() {
     .map((c) => {
       const price = effectivePrice(c);
       const upside = effectiveUpside(c);
-      const live = c.livePrice != null;
       const left = ((c.dcf_bear - lo) / span) * 100;
       const width = Math.max(2, ((c.dcf_bull - c.dcf_bear) / span) * 100);
       const basePos = ((c.dcf_base - lo) / span) * 100;
@@ -138,9 +133,9 @@ function renderTable() {
       <tr>
         <td><span class="ticker">${c.ticker}</span><br><span class="cname">${c.name}</span></td>
         <td>${c.sector}</td>
-        <td class="num">${fmt$(price)}${live ? "" : '<br><span class="stale">as of ' + c.price_asof + "</span>"}</td>
-        <td class="num">${fmt$(c.dcf_base)}<br><span class="stale">model ${c.model_asof}</span></td>
-        <td class="num upside ${upside >= 0 ? "pos" : "neg"}">${fmtPct(upside)}</td>
+        <td class="num"><span class="price">${fmt$(price)}</span><br><span class="stale">as of ${c.price_asof}</span></td>
+        <td class="num"><span class="dcf">${fmt$(c.dcf_base)}</span><br><span class="stale">model ${c.model_asof}</span></td>
+        <td class="num"><span class="upside-chip ${upside >= 0 ? "pos" : "neg"}">${fmtPct(upside)}</span></td>
         <td>
           <div class="range-bar">
             <div class="range-fill" style="left:${left}%;width:${width}%"></div>
@@ -152,45 +147,6 @@ function renderTable() {
       </tr>`;
     })
     .join("");
-}
-
-function parseStooq(csv) {
-  const out = {};
-  const lines = csv.trim().split("\n");
-  for (let i = 1; i < lines.length; i++) {
-    const cols = lines[i].split(",");
-    if (cols.length < 8) continue;
-    const sym = cols[0].replace(".US", "").toUpperCase();
-    const close = parseFloat(cols[6]);
-    if (sym && !isNaN(close) && close > 0) out[sym] = close;
-  }
-  return out;
-}
-
-async function loadLiveQuotes() {
-  const label = document.getElementById("live-label");
-  const dot = document.getElementById("live-dot");
-  try {
-    const syms = COMPANIES.map((c) => c.ticker.toLowerCase() + ".us").join(",");
-    const res = await fetch(STOOQ_URL.replace("{syms}", encodeURIComponent(syms)));
-    if (!res.ok) throw new Error("quote fetch failed");
-    const live = parseStooq(await res.text());
-    let n = 0;
-    COMPANIES.forEach((c) => {
-      if (live[c.ticker] != null) { c.livePrice = live[c.ticker]; n++; }
-    });
-    if (n > 0) {
-      dot.classList.add("on");
-      const now = new Date();
-      label.textContent = `Live quotes · ~15 min delayed · updated ${now.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" })} (${n}/${COMPANIES.length} tickers)`;
-      renderTable();
-      renderLeaderboard();
-    } else {
-      throw new Error("no quotes parsed");
-    }
-  } catch (e) {
-    label.textContent = `Live feed unavailable — showing stored prices as of ${META.price_asof || "—"}`;
-  }
 }
 
 document.addEventListener("DOMContentLoaded", init);
