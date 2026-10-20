@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sector Report — AI-Augmented Sector Teardown | Archit Chawla</title>
+<meta name="description" content="The full sector report: 20-company DCF teardown across 5 sectors, with live scorecard and sector ranking. By Archit Chawla.">
+<link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="header-top">
+      <div class="eyebrow">Independent Equity Research</div>
+      <div class="view-switch to-report" aria-label="Switch view">
+        <span class="vs-thumb"></span>
+        <a href="index.html" class="vs-opt" data-view="dashboard">Dashboard</a>
+        <a href="report.html" class="vs-opt active" data-view="report"><span class="vs-dot"></span>Live Report</a>
+      </div>
+    </div>
+    <h1>Sector Report</h1>
+    <p class="sub">AI-Augmented Sector Teardown: the 20-company outlook, written up as a paper — with the scorecard and sector ranking kept live.</p>
+    <div class="byline">
+      <span>By <strong>Archit Chawla</strong></span>
+      <span class="dot">·</span>
+      <span>Paper of <strong>October 19, 2026</strong></span>
+      <span class="dot">·</span>
+      <span>Model as of <strong id="meta-model-asof">—</strong></span>
+      <span class="dot">·</span>
+      <span>Prices as of <strong id="meta-price-asof">—</strong></span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap page-enter">
+
+  <article class="paper">
+
+    <p class="note-line">The written analysis below is the published paper of October 19, 2026, based on the October 16 close. The sector leaderboard and full scorecard tables are <strong>live</strong> — dated through <strong id="note-through">the latest close</strong> and refreshed every trading day after the market close, so their figures may differ slightly from the paper's.</p>
+
+    <h3>Executive summary</h3>
+    <p>I ran the same teardown framework over 20 companies in 5 sectors — a 5-year DCF with bull and bear cases, sector comps, and a BUY/HOLD/PASS call on each — so the ranking below is apples to apples. The result is unambiguous:</p>
+    <ul>
+      <li><strong>1 BUY, 2 HOLDs, 17 PASSes</strong> <span id="sum-counts"></span>. This is not a cheap market. At a 5.1% risk-free rate, the math says most of what I cover is priced for perfection.</li>
+      <li><strong>Charles Schwab (SCHW) is the single BUY</strong> (+75.2% base-case upside): a 0.78 beta against demonstrated 48% through-cycle pretax margins. The market is pricing the rate-cut risk; my framework says the compensation is more than adequate.</li>
+      <li><strong>JPMorgan (−7.7%) and Salesforce (−7.1%) are HOLDs</strong> — fairly priced inside my bands, with identifiable drags (net interest normalization for JPM, a $33.4B net-debt load for CRM).</li>
+      <li><strong>Ranked by median base-case upside, Diversified Financials screens best (−18.1%), then Fintech (−32.9%), Enterprise SaaS (−41.7%), Consumer Tech (−54.5%), and AI Infra &amp; Semis last (−66.2%).</strong> The ranking is relative — every sector median is negative. Read it as "least overvalued," not "cheap."</li>
+    </ul>
+    <p>The through-line: elevated rates punish long-duration growth cash flows mechanically. AI hardware and hyperscalers carry the highest betas and the heaviest capex, so they screen worst under this framework. That is a statement about price versus cash math, not about the quality of the businesses — several of these are superb companies I would happily own 30–40% lower.</p>
+
+    <h3>Sector leaderboard <span class="live-tag">Live</span></h3>
+    <p>Ranked by median base-case implied upside across the four companies in each sector, recomputed from the latest stored prices.</p>
+    <div class="table-scroll">
+      <table class="companies">
+        <thead>
+          <tr><th>Rank</th><th>Sector</th><th class="num">Median upside</th><th>Companies (upside / call)</th></tr>
+        </thead>
+        <tbody id="lb-body"></tbody>
+      </table>
+    </div>
+
+    <h3>Sector notes</h3>
+    <p><strong>1. Diversified Financials (−18.1% median).</strong> The best of a fully-priced market. Low betas (0.78–1.2 range) mean the 5.1% rate regime hurts these names least in discount-rate terms, and distributions are tangible cash, not promises. JPM is fairly priced; the risk is net interest income normalizing as the Fed eventually eases — my bear cases size that. BLK screens worst in the sector (−49.3%): a superb franchise at a multiple that assumes perpetual double-digit AUM compounding. The sector's edge is arithmetic, not optimism.</p>
+    <p><strong>2. Fintech (−32.9% median).</strong> A barbell. SCHW is the project's lone BUY — the market sees rate-cut risk to net interest income (49% of revenue) and I agree it's the key risk, but a 7.8% WACC against 48% through-cycle pretax margins leaves enormous room; my call sits above street consensus and the memo owns that gap explicitly. At the other end, HOOD (−70.5%) is priced as if elevated rates last forever: the quote implies ~40% five-year revenue CAGR or a ~10% WACC. COIN (−45.7%) and SOFI (−20.1%) sit between — real businesses, wrong prices.</p>
+    <p><strong>3. Enterprise SaaS (−41.7% median).</strong> CRM (−7.1%, HOLD) is the closest call in the project: the $33.4B net-debt load from 2026 levering is the main drag on an otherwise clean franchise. NOW, SNOW, PLTR are all PASS by wide margins — the market is capitalizing AI-workflow narratives at multiples the cash math can't support. SNOW deserves a methodology footnote: never GAAP-profitable, so it runs on an explicit revenue→FCF-margin ramp (16.1% → 37.9%), stated as judgment. PLTR (−82.9%) is the most extreme quote-versus-cash disconnect in the entire universe.</p>
+    <p><strong>4. Consumer Tech (−54.5% median).</strong> All four PASS. My reverse-DCF arithmetic says these quotes imply 6.4–8.8% <em>perpetual</em> FCF growth — that is the definition of priced for perfection. The honest tension: peer forward P/E multiples are kinder than my DCFs (META's comps-implied value even clears the quote), but multiples borrow the market's own optimism while the DCF counts cash. Capex is the swing factor — META at 30% and GOOGL at 20% of revenue against nine-figure 2026 guides is what breaks the models. If AI capex converts to revenue faster than I assume, these calls are wrong; the memos say so.</p>
+    <p><strong>5. AI Infra &amp; Semis (−66.2% median).</strong> Screens worst, and the bear cases here are real down-cycle years (−10% to −20% revenue), not just slower growth — semis are cyclical and the framework respects that. Even my bull cases (29–56% five-year revenue CAGRs at expanding margins) cannot clear these quotes under 11.5–21.75% WACCs. AVGO's bull case is the only one in the sector at the quote. ALAB (−87.7%) carries an additional flag: IPO'd March 2024, so the history is two annuals plus S-1-derived figures — the framework is identical but the confidence interval is widest here.</p>
+
+    <h3>Full scorecard <span class="live-tag">Live</span></h3>
+    <p>All 20 companies, ranked by base-case implied upside at the latest stored prices. DCF values are fixed at the model date.</p>
+    <div class="table-scroll">
+      <table class="companies">
+        <thead>
+          <tr><th>Ticker</th><th>Company</th><th>Sector</th><th class="num">Price</th><th class="num">DCF base</th><th class="num">Bull</th><th class="num">Bear</th><th class="num">Upside</th><th>Call</th></tr>
+        </thead>
+        <tbody id="score-body"></tbody>
+      </table>
+    </div>
+
+    <h3>Forward outlook — what would change the calls</h3>
+    <p>I hold these views conditionally; here is what flips them:</p>
+    <ul>
+      <li><strong>Rate normalization is the master variable.</strong> If the 10Y moves from 5.1% toward 4%, every WACC in this project falls ~100–150 bps and DCF values rise mechanically — most PASSes narrow sharply and several flip to HOLD. Conversely, a move toward 6% makes even the HOLDs indefensible. Watch the Fed, not the tickers.</li>
+      <li><strong>Hyperscaler capex conversion.</strong> The consumer-tech PASSes rest heavily on elevated capex (META 30%, GOOGL 20% of revenue). If AI infrastructure spend converts to revenue faster than my ramps assume, AMZN/META/GOOGL rerate upward on cash flow, not narrative.</li>
+      <li><strong>The semi cycle.</strong> My bear cases assume a real down-cycle year for NVDA/AVGO/AMD/ALAB. If the AI hardware cycle extends without a digestion year, the bear cases are too punitive — but the base cases still don't clear the quotes.</li>
+      <li><strong>SCHW is the idiosyncratic long.</strong> The BUY does not need rates to fall; it needs Schwab's through-cycle margins to persist. The risk is a faster-than-expected NII compression — sized in the $77.41 bear case.</li>
+    </ul>
+
+    <h3>Methodology</h3>
+    <p><strong>One framework, twenty companies.</strong> Each name gets: 5-year explicit DCF (FY2026–2030, 3-year granular detail), bull and bear cases, and a comps cross-check against its three sector peers. WACC via CAPM on identical constants: 5.1% US 10-year risk-free (October 19, 2026), 4.5% equity risk premium, per-company beta cross-checked across multiple sources, 21% tax. Terminal growth 3.0% base (3.5% bull, 2.0% bear); bull/bear discount rates shift ∓100 bps. Every computed cell in every workbook is a live Excel formula; every judgment input is tagged with its rationale.</p>
+    <p><strong>The one sanctioned adaptation: banks.</strong> You cannot run an enterprise DCF on a bank. For JPM, GS, MS I discount distributable cash flow (dividends + buybacks) at the cost of equity — the standard approach. SOFI and SCHW use an operating-proxy DCF (pretax income + D&amp;A, with only the equity slice of balance-sheet reinvestment treated as a shareholder cash cost), since loan-book flows distort their cash-flow statements. Both adaptations are documented per company; the comparison across the two is directionally consistent but not identical, and I say so plainly.</p>
+    <p><strong>AI-augmented workflow.</strong> I use LLM tooling to accelerate data extraction and drafting, then verify every figure against primary sources myself. Each memo's Methodology &amp; Verification Notes logs what I caught: stale share counts (HOOD, COIN, META, GOOGL), blank history columns in data pulls, distorted tax provisions normalized to statutory, fiscal-year mappings (NVDA, CRM, SNOW report on January fiscal years). Nothing is invented; where data was missing it is marked N/A with the workaround stated.</p>
+    <p><strong>Recommendation bands:</strong> BUY needs 20%+ base-case upside with a margin of safety; HOLD is −10% to +20%; PASS is anything worse. The bands are applied mechanically — the calls in this report follow the math even where they disagree with consensus.</p>
+
+    <h3>Limitations</h3>
+    <ul>
+      <li>One framework cannot be perfectly neutral: high-beta growth will always screen worse than low-beta compounders at high rates. That is a feature of valuation, but it means this report is structurally skeptical of exactly the stocks the market loves most right now.</li>
+      <li>Two different bank adaptations (distribution DCF vs. operating-proxy DCF) are both defensible and both disclosed, but SOFI/SCHW are not perfectly comparable to JPM/GS/MS.</li>
+      <li>ALAB's two-year history and SNOW's never-profitable P&amp;L widen their confidence intervals beyond what the point estimates suggest.</li>
+      <li>Comps are sector-relative (the other three names in each sector), not broad-market — deliberately, so the peer lens shares the framework's assumptions.</li>
+    </ul>
+
+    <p class="paper-foot">Independent project for skill demonstration; not investment advice. All models, memos, raw data, and rerun scripts are published alongside this report. <a href="SECTOR_REPORT.pdf">Download the report as PDF</a>.</p>
+
+  </article>
+
+  <footer>
+    <p>Independent project for skill demonstration; not investment advice.</p>
+    <p>© 2026 Archit Chawla · Data: Yahoo Finance via scheduled refresh</p>
+  </footer>
+
+</main>
+
+<script src="report.js?v=4"></script>
+<script>
+document.querySelectorAll(".view-switch .vs-opt").forEach(function (a) {
+  a.addEventListener("click", function (e) {
+    if (a.classList.contains("active")) { e.preventDefault(); return; }
+    e.preventDefault();
+    var sw = a.closest(".view-switch");
+    sw.classList.toggle("to-report", a.dataset.view === "report");
+    sw.querySelectorAll(".vs-opt").forEach(function (o) { o.classList.toggle("active", o === a); });
+    setTimeout(function () { window.location.href = a.getAttribute("href"); }, 360);
+  });
+});
+</script>
+</body>
+</html>
