@@ -5,13 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI-Augmented Sector Teardown — 20-Company Outlook | Archit Chawla</title>
 <meta name="description" content="Independent equity research: DCF valuations across 20 companies in 5 sectors, with a ranked sector outlook. By Archit Chawla.">
-<link rel="stylesheet" href="styles.css?v=3">
+<link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
 
 <header class="site-header">
   <div class="wrap">
-    <div class="eyebrow">Independent Equity Research</div>
+    <div class="header-top">
+      <div class="eyebrow">Independent Equity Research</div>
+      <div class="view-switch" aria-label="Switch view">
+        <span class="vs-thumb"></span>
+        <a href="index.html" class="vs-opt active" data-view="dashboard">Dashboard</a>
+        <a href="report.html" class="vs-opt" data-view="report"><span class="vs-dot"></span>Live Report</a>
+      </div>
+    </div>
     <h1>AI-Augmented Sector Teardown</h1>
     <p class="sub">DCF valuations on 20 companies across 5 sectors, ranked by implied upside. One framework, applied identically — so the comparison is honest.</p>
     <div class="byline">
@@ -24,7 +31,7 @@
   </div>
 </header>
 
-<main class="wrap">
+<main class="wrap page-enter">
 
   <section class="stats" id="stats"></section>
 
@@ -73,6 +80,18 @@
 
 </main>
 
-<script src="app.js?v=3"></script>
+<script src="app.js?v=4"></script>
+<script>
+document.querySelectorAll(".view-switch .vs-opt").forEach(function (a) {
+  a.addEventListener("click", function (e) {
+    if (a.classList.contains("active")) { e.preventDefault(); return; }
+    e.preventDefault();
+    var sw = a.closest(".view-switch");
+    sw.classList.toggle("to-report", a.dataset.view === "report");
+    sw.querySelectorAll(".vs-opt").forEach(function (o) { o.classList.toggle("active", o === a); });
+    setTimeout(function () { window.location.href = a.getAttribute("href"); }, 360);
+  });
+});
+</script>
 </body>
 </html>
