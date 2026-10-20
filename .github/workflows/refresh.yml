@@ -1,6 +1,9 @@
 name: Daily price refresh
 
 # Weekdays at 21:30 UTC (17:30 ET) — after the US market close.
+# Refreshes prices, commits the data, and deploys the dashboard in one run.
+# Note: a commit pushed with GITHUB_TOKEN does not trigger other workflows,
+# so this workflow deploys Pages itself instead of relying on pages.yml.
 on:
   schedule:
     - cron: "30 21 * * 1-5"
@@ -8,9 +11,18 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   refresh:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -32,3 +44,12 @@ jobs:
           git add site/data/companies.json
           git diff --cached --quiet || git commit -m "Daily price refresh $(date -u +%F)"
           git push
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
