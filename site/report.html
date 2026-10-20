@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sector Report — AI-Augmented Sector Teardown | Archit Chawla</title>
 <meta name="description" content="The full sector report: 20-company DCF teardown across 5 sectors, with live scorecard and sector ranking. By Archit Chawla.">
-<link rel="stylesheet" href="styles.css?v=4">
+<link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
 
@@ -48,6 +48,18 @@
       <li><strong>Ranked by median base-case upside, Diversified Financials screens best (−18.1%), then Fintech (−32.9%), Enterprise SaaS (−41.7%), Consumer Tech (−54.5%), and AI Infra &amp; Semis last (−66.2%).</strong> The ranking is relative — every sector median is negative. Read it as "least overvalued," not "cheap."</li>
     </ul>
     <p>The through-line: elevated rates punish long-duration growth cash flows mechanically. AI hardware and hyperscalers carry the highest betas and the heaviest capex, so they screen worst under this framework. That is a statement about price versus cash math, not about the quality of the businesses — several of these are superb companies I would happily own 30–40% lower.</p>
+
+    <h3>The model</h3>
+    <div class="model-box">
+      <div class="model-row"><span class="model-k">Framework</span><span class="model-v">One identical model for all 20 companies — a 5-year explicit DCF (FY2026–2030, with 3-year granular detail) in base, bull and bear cases, so every ranking is apples to apples.</span></div>
+      <div class="model-row"><span class="model-k">Cash flows</span><span class="model-v">Free cash flow to firm, built from revenue, margins and reinvestment. Every computed cell in every workbook is a live Excel formula; every judgment input is tagged with its rationale.</span></div>
+      <div class="model-row"><span class="model-k">Banks</span><span class="model-v">An enterprise DCF cannot run on a bank, so JPM, GS and MS use a distribution DCF — dividends plus buybacks discounted at the cost of equity. SOFI and SCHW use an operating-proxy DCF, since loan-book flows distort their cash-flow statements.</span></div>
+      <div class="model-row"><span class="model-k">Discount rate</span><span class="model-v">CAPM on shared constants: 5.1% US 10-year risk-free, 4.5% equity risk premium, per-company beta cross-checked across multiple sources, 21% tax.</span></div>
+      <div class="model-row"><span class="model-k">Terminal value</span><span class="model-v">Gordon growth at 3.0% in the base case (3.5% bull, 2.0% bear); bull and bear cases also shift the discount rate by ∓100 bps.</span></div>
+      <div class="model-row"><span class="model-k">Cross-check</span><span class="model-v">Sector comps against the other three names in each sector, so the peer lens shares the framework's assumptions.</span></div>
+      <div class="model-row"><span class="model-k">Calls</span><span class="model-v">BUY at +20% or more base-case upside · HOLD from −10% to +20% · PASS below −10% — applied mechanically, even where the math disagrees with consensus.</span></div>
+      <div class="model-row"><span class="model-k">Prices</span><span class="model-v">Previous-day closing prices (Yahoo Finance), refreshed every trading day after the US close. DCF values stay fixed at the model date; only the price side moves.</span></div>
+    </div>
 
     <h3>Sector leaderboard <span class="live-tag">Live</span></h3>
     <p>Ranked by median base-case implied upside across the four companies in each sector, recomputed from the latest stored prices.</p>
