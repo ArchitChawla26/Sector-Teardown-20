@@ -214,8 +214,36 @@ footer {
 }
 footer p { margin: 4px 0; }
 
+/* ---------- type scale: one notch up ---------- */
+.site-header h1 { font-size: 46px; }
+.site-header .sub { font-size: 18px; }
+.eyebrow { font-size: 13px; }
+.byline { font-size: 15px; }
+h2 { font-size: 28px; }
+.section-note { font-size: 15.5px; }
+.footnote { font-size: 14px; }
+.stat .k { font-size: 13px; }
+.stat .v { font-size: 31px; }
+.lb-name { font-size: 18px; }
+.lb-sub { font-size: 14px; }
+.lb-rank { font-size: 16px; }
+.lb-upside { font-size: 21px; }
+.lb-upside small { font-size: 13px; }
+.filters button { font-size: 14.5px; }
+table.companies { font-size: 16px; min-width: 820px; }
+table.companies th { font-size: 12.5px; }
+.ticker { font-size: 17px; }
+.cname { font-size: 14px; }
+.price { font-size: 17px; }
+.upside-chip { font-size: 15.5px; }
+.range-lbl { font-size: 13px; }
+.stale { font-size: 13px; }
+.badge { font-size: 13.5px; }
+.method { font-size: 16px; }
+footer { font-size: 14px; }
+
 @media (max-width: 640px) {
-  .site-header h1 { font-size: 31px; }
+  .site-header h1 { font-size: 34px; }
   .lb-row { grid-template-columns: 36px 1fr; }
   .lb-upside { grid-column: 2; text-align: left; }
 }
